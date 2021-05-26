@@ -7,3 +7,4 @@ require File.join(Bundler::Plugin.index.load_paths("bundler-inject")[0], "bundle
 # Bundler will treat runtime dependencies like base dependencies, and
 # development dependencies will be added by default to the :development group.
 gemspec
+gem "graphql-preload", git: "https://github.com/Envek/graphql-preload"

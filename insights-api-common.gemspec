@@ -16,7 +16,7 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "acts_as_tenant"
   spec.add_runtime_dependency "manageiq-password", "~>0.1"
   spec.add_runtime_dependency "pg",                "> 0"
-  spec.add_runtime_dependency "rails",             ">= 5.2.2.1", "~> 5.2.2"
+  spec.add_runtime_dependency "rails",             "~> 6.0"
 
   # For Insights::API::Common::Logging
   spec.add_runtime_dependency "manageiq-loggers", "~> 0.3"
@@ -30,10 +30,9 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "openapi_parser",      "~> 0.10.0"
 
   spec.add_runtime_dependency "insights-rbac-api-client", "~> 1.0"
-  # For Insights::API::Common::GraphQL, pinning for now due to breaking change brought in 1.12.0
-  spec.add_runtime_dependency "graphql",         "1.11.7"
+  spec.add_runtime_dependency "graphql",         "~> 1.10.0"
   spec.add_runtime_dependency "graphql-batch",   "~> 0.4"
-  spec.add_runtime_dependency "graphql-preload", "~> 2.0", "< 2.1"
+  # spec.add_runtime_dependency "insights-graphql-preload", "~> 2.1"
   spec.add_runtime_dependency "query_relation"
 
   spec.add_development_dependency "factory_bot"

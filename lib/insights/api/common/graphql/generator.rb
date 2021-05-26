@@ -29,7 +29,7 @@ module Insights
           end
 
           def self.app_name
-            Rails.application.class.parent.name.underscore
+            Rails.application.class.module_parent.name.underscore
           end
 
           def self.pluggable_template_file_by(type)
